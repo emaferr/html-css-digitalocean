@@ -13,7 +13,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Noto Sans JP', sans-serif;
+    cursor: default;
+    font-family: sans-serif;
 }  
 
 .clearfix::after{
@@ -31,6 +32,15 @@
 ***************************/
 
 /* Debug */
+.dbg1{
+    background-color: bisque;
+}
+
+.dbg2{
+    background-color: rgb(196, 236, 255);
+}
+
+
 .dbg div[class*="col-"]{  
 }
 /* end Debug */
@@ -47,7 +57,7 @@
 }
 
 .container{
-    max-width: 1170px;
+    width: 75%;
     margin: 0 auto;
 }
 
