@@ -13,9 +13,14 @@
     <link rel="stylesheet" href="./assets/css/style.css">
      <!-- end Framework | Style -->
 
-     <!-- Icons --> 
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-     <!-- end Icons -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <!-- end Google Fonts -->
+
+    <!-- Icons --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <!-- end Icons -->
 
     <!-- Favicon -->
     <link rel="icon" href="./assets/img/logo-small.svg" type="image/svg"/>
@@ -45,7 +50,7 @@
                     <!-- end Logo section -->
     
                     <!-- Center link -->
-                    <div class="col-4">
+                    <div class="col-4 min_width">
                         <a class="nav_link txt_color drop" href="#">Products</a>
                         <a class="nav_link txt_color" href="#">Customers</a>
                         <a class="nav_link txt_color drop" href="#">Community</a>
@@ -62,7 +67,7 @@
                     </div>
                     <!-- end Dx link -->
                     <div class="icon_menu">
-                        <i class="fas fa-bars txt_color_lblue"></i>
+                        <i class="fas fa-bars txt_lblue"></i>
                     </div>
                 </div>
 
@@ -72,6 +77,45 @@
 
     </header>
     <!-- Site header -->
+
+    <!-- Site main -->
+    <main>
+
+        <div class="hero">
+
+            <div class="container">
+                
+                <div class="hero_sx col-ss-12 col-ms-7 col-7">
+                    <h1 class="txt_white">The simplest cloud platform for developers & teams</h1>
+                    <p class="txt_white">
+                        Deploy, manage, and scale cloud applications faster and more 
+                        efficently on DigitalOcean. We make managing infrastructure 
+                        easy for teams and businesses, whether you're running one 
+                        virtual machine or ten thousand.
+                    </p>
+                </div>
+                <div class="col-ss-12 col-5">
+                    <div class="form">
+                        <h2 class="txt_black">Deploy your app in seconds.</h2>
+                        <h2 class="txt_lblue">Get started now.</h2>
+                        <input class="hero_form" type="text" id="email" name="email" placeholder="Email">
+                        <input class="hero_form" type="password" id="pass" name="password" placeholder="Password" minlength="8" required>
+                        <div class="hero_btn account_btn">
+                            <a class="txt_white" href="#">Create your account</a>
+                        </div>
+                        <div class="hero_btn google_btn">
+                            <a href="#">Sign up with google</a>
+                        </div>
+                        <div class="terms_service">
+                            <span>By signing up you agree to the <a class="txt_lblue" href="#">Terms of Service</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- end Site main -->
     
 </body>
 </html>
