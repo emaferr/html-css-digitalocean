@@ -1,4 +1,7 @@
-/* Utility */
+/**************************** 
+ * Utility 
+ ***************************/
+
 .flex_center{
     display: flex;
     align-items: center;
@@ -23,33 +26,61 @@
     border-bottom: 2px solid #031C4E;
     border-left: 2px solid #031C4E;
 }
-/* end Utility */
 
-/* Color */
+/**************************** 
+ * end Utility 
+ ***************************/
+
+
+/**************************** 
+ * Color 
+ ***************************/
+
 .txt_color{
     color: #031C4E;
 }
 
-/* end Color */
+.txt_color_lblue{
+    color: #3A8AFF;
+}
 
-/* Button */
+/**************************** 
+ * end Color 
+ ***************************/
+
+
+ /**************************** 
+ * Buton 
+ ***************************/
+
+
 .btn{
     text-decoration: none;
     border: 1px solid #0570FF;
     border-radius: 5px;
     color: #0570FF; 
     padding: 10px 10px;
-    margin: 0 10px;
+    margin-left: 10px;
     cursor: pointer; 
 }
 
-/* end Button */
+/**************************** 
+ * end Button 
+ ***************************/
 
-/* Site header */
+
+/**************************** 
+ * Header
+ ***************************/
+
 header{
     width: 100%;
     box-shadow: 0 0 3px #333333;
     font-size: 15px;
+}
+
+.header_nav [class*="col-"]{
+    min-width: max-content;
 }
 
 /* Logo section */
@@ -64,6 +95,51 @@ header{
     padding: 0 10px;
 }
 
+/**************************** 
+ * Header
+ ***************************/
 
 
-/* end Site header */
+/**************************** 
+ * Media query  
+ ***************************/
+
+ /* Small Screen */
+ @media screen and (max-width:767px){
+    .container{
+        width: 95%;
+    }
+    .nav_link, #sign_up{
+        display: none;
+    }
+    .logo> img{
+        height: 20px;
+    }
+ }
+
+/* Medium Screen */
+@media screen and (min-width:768px) and (max-width:991px){
+    .container{
+        width: 95%;
+    }
+    .nav_link, #sign_up{
+        display: none;
+    }
+    .logo> img{
+        height: 25px;
+    }
+}
+/* end Medium Screen */
+
+/* Large Screen */
+@media screen and (min-width:992px){
+    .icon_menu{
+        display: none;
+    }
+
+}
+/* Large Screen */
+
+/**************************** 
+ * end Media query  
+ ***************************/
