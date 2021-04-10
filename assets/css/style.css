@@ -153,23 +153,8 @@ h1{
     padding-right: 7vw;
 }
 
-.hero{
-    height: 30vw;
-    background-image: url(../img/bg-banner-home.jpg);
-    background-repeat: 0;
-    background-size: 110vw;
-    background-position: 49% 0%;
-}
-
 .hero_sx{
     padding-top: 2vw;
-}
-
-.hero p{
-    font-size: 1.3vw;
-    padding: 1.5vw 0;
-    opacity: 70%;
-    margin-right: 1.5vw;
 }
 
 .form{
@@ -182,8 +167,12 @@ h1{
     padding-top: 2vw;
 }
 
-.form h2{
-    font-size: 1.7vw;
+.hero{
+    height: 30vw;
+    background-image: url(../img/bg-banner-home.jpg);
+    background-repeat: 0;
+    background-size: cover;
+    background-position: 49% 0%;
 }
 
 .hero_form, .hero_btn {
@@ -193,6 +182,17 @@ h1{
     border: 0.1vw solid #EEEEEE;
     border-radius: 5px;
     font-size: 1vw;
+}
+
+.hero p{
+    font-size: 1.3vw;
+    padding: 1.5vw 0;
+    opacity: 70%;
+    margin-right: 1.5vw;
+}
+
+.form h2{
+    font-size: 1.7vw;
 }
 
 .terms_service a{
@@ -213,37 +213,45 @@ h1{
 
  /* Small Screen */
  @media screen and (max-width:767px){
+    body{
+        zoom: 200%;
+    }
     .container{
-        width: 90%;
+        width: 95%;
     }
     .nav_link, #sign_up{
         display: none;
     }
     .hero{
-        height: 60vw;
+        height: 72vw;
     }
     .form{
         height: 100%;
         margin: 0%;
-        margin-top: 8%;
+        margin-top: 2%;
+        font-size: 2vw;
+        zoom: 140%;
     }
-    body{
-        zoom: 165%;
+    .hero p{
+        font-size: 2vw;
     }
  }
 
 /* Medium Screen */
 @media screen and (min-width:768px) and (max-width:991px){
-    .container{
-        width: 80%;
-    }
-    .nav_link, #sign_up{
-        display: none;
+    body{
+        zoom: 125%;
     }
     h1{
         margin-top: 15%;
         padding: 0;
         font-size: 3.4vw;
+    }
+    .container{
+        width: 85%;
+    }
+    .nav_link, #sign_up{
+        display: none;
     }
     .hero{
         height: 39vw;
@@ -252,11 +260,10 @@ h1{
         font-size: 1.7vw;
     }
     .form{
-        zoom: 120%;
+        zoom: 125%;
+        margin-top: 10%;
+        font-size: 2vw;
      
-    }
-    body{
-        zoom: 120%;
     }
 
 }
