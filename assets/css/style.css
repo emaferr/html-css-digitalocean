@@ -2,19 +2,20 @@
  * Utility 
  ***************************/
 
- /* body{
-    min-width: 1400px;
- } */
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.small_container{
+    width: 80%;
+    margin: auto;
+}
 
 .flex_center{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-a{
-    text-decoration: none;
-    cursor: pointer;
 }
 
 .txt_align_dx{
@@ -55,6 +56,10 @@ a{
 
 .txt_black{
     color: #000000;
+}
+
+.txt_grey{
+    color: #6F7B97;
 }
 
 /**************************** 
@@ -118,10 +123,6 @@ header{
     align-items: center;
 }
 
-.hero [class*="col-"]{
-    min-width: 35%;
-}
-
 /* Logo section */
 .logo> img{
     height: 2vw;
@@ -136,6 +137,7 @@ header{
 .min_width{
     min-width: 26vw;
 }
+/* end Nav link */
 
 /**************************** 
  * Header
@@ -152,6 +154,10 @@ h1{
     margin-top: 6%;
     line-height: 4vw;
     padding-right: 7vw;
+}
+
+.hero [class*="col-"]{
+    min-width: 35%;
 }
 
 .hero_sx{
@@ -208,7 +214,6 @@ h1{
 }
 
 .customer h3{
-    color: #6F7B97;
     padding: 2.5vw 0;
 }
 .customer h4{
@@ -227,6 +232,65 @@ h1{
     padding: 0 0.5vw;
 }
 /* end Customer */
+
+/* Deploy section */
+.deploy_inroduction{
+    text-align: center;
+    padding-top: 3vw;
+}
+
+.col_3{
+    padding: 4vw 0;
+}
+
+.small_p{
+    padding-right: 2vw;  
+}
+
+.deploy h2{
+    font-size: 2.3vw;
+    padding: 1vw 0;
+}
+.deploy p{
+    font-size: 1.33vw;
+}
+
+.line li{
+    font-size: 1.2vw;
+    list-style: none;
+    padding-bottom: 2.5vw;
+    margin-top: -1.55vw;
+}
+
+.small_p img{
+    display: block;
+    padding-bottom: 0.8vw;
+    height: 3.5vw;
+    width: auto;
+}
+
+.small_p p{
+    padding-top: 0.3vw;
+    padding-bottom: 1.5vw;
+}
+
+.small_p h4, .small_p p{
+    font-size: 0.9vw;
+}
+
+
+.line::before{
+    content: "";
+    display: inline-block;
+    width: 0.1vw;
+    height: 14.3vw;
+    background-color: #6f7b9772;
+    margin-left: -0.8vw;
+    margin-bottom: -12.35vw;
+}
+
+/* end Deploy section */
+
 
 
  /**************************** 
@@ -259,6 +323,9 @@ h1{
         font-size: 2vw;
         zoom: 140%;
     }
+    .deploy{
+        zoom: 120%;
+    }
     .hero p{
         font-size: 2vw;
     }
@@ -268,6 +335,8 @@ h1{
     .customer h3 h4{
         font-size: 1vw;
     }
+
+
  }
 
 /* Medium Screen */
@@ -296,7 +365,9 @@ h1{
         zoom: 125%;
         margin-top: 10%;
         font-size: 2vw;
-     
+    }
+    .deploy{
+        zoom: 130%;
     }
 
 }
