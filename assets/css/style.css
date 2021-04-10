@@ -9,6 +9,7 @@
 .flex_center{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 a{
@@ -200,6 +201,32 @@ h1{
 }
 /* end Hero */
 
+/* Customer */
+.customer{
+    text-align: center;
+    background-color: #F3F5F9;
+}
+
+.customer h3{
+    color: #6F7B97;
+    padding: 2.5vw 0;
+}
+.customer h4{
+    padding-top: 1vw;
+    padding-bottom: 2vw;
+
+}
+.customer h3, .customer h4{
+    font-size: 1vw;
+}
+.customer ul li{
+    display: inline;
+}
+.customer ul li img{
+    height: 6vw;
+    padding: 0 0.5vw;
+}
+/* end Customer */
 
 
  /**************************** 
@@ -234,6 +261,12 @@ h1{
     }
     .hero p{
         font-size: 2vw;
+    }
+    .customer ul li img{
+        zoom: 155%;
+    }
+    .customer h3 h4{
+        font-size: 1vw;
     }
  }
 
