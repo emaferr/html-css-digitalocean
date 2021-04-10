@@ -326,6 +326,11 @@ h1{
     .deploy{
         zoom: 120%;
     }
+
+    .small_container{
+        width: 95%;
+    }
+
     .hero p{
         font-size: 2vw;
     }
@@ -334,6 +339,14 @@ h1{
     }
     .customer h3 h4{
         font-size: 1vw;
+    }
+
+    .deploy li{
+        margin-left: 1vw;
+    }
+    
+    .line::before{
+        margin-left: 0;
     }
 
 
