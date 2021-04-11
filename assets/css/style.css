@@ -7,6 +7,10 @@ a{
     cursor: pointer;
 }
 
+input{
+    cursor: text;
+}
+
 .small_container{
     width: 80%;
     margin: auto;
@@ -24,6 +28,10 @@ a{
 
 .txt_align_center{
     text-align: center;
+}
+
+.header_nav a:hover{
+    color: #3A8AFF;
 }
 
 .drop::after{
@@ -70,15 +78,18 @@ a{
     background-image: linear-gradient(to top, #001E9A,#0048C6);
 }
 
+.opacity_50{
+    opacity: 50%;
+}
+
 /**************************** 
  * end Color 
  ***************************/
 
 
  /**************************** 
- * Buton 
+ * Button 
  ***************************/
-
 
 .btn{
     text-decoration: none;
@@ -107,10 +118,21 @@ a{
     background-repeat: no-repeat;
     box-shadow: 0.1vw 0.1vw 0.1vw #cccccc;
     background-position: 2% 50%;
+    cursor: pointer;
 }
 
 .google_btn a{
     color: #626262;
+}
+
+.fa-circle:hover, .test_speed:hover, .btn:hover, .google_btn:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.btn_create:hover{
+    background-color: #0570FF;
+    cursor: pointer;
 }
 
 /**************************** 
@@ -126,7 +148,7 @@ header{
     width: 100%;
     height: 4vw;
     box-shadow: 0 0 3px #333333;
-    font-size: 1vw;
+    font-size: 0.9vw;
     display: flex;
     align-items: center;
     position: fixed;
@@ -259,7 +281,7 @@ h1{
 
 .small_p{
     padding-right: 3vw;
-    height: 10vw;  
+    height: 12vw;  
 }
 
 .deploy h2{
@@ -314,6 +336,10 @@ h1{
     margin-top: -1vw;
 }
 
+#margin_h2{
+    margin-bottom: 3.5vw;
+}
+
 .image_scroll_section{
     background-color: #F3F5F9;
     display: inline-block;
@@ -324,6 +350,10 @@ h1{
     text-align: center;
     font-size: 1.5vw;
     padding: 4vw 0;
+}
+
+.scroll_img{
+    border-radius: 5px;
 }
 
 .slideshow{
@@ -342,6 +372,7 @@ h1{
 
 .image_scroll_section p{
     padding-top: 1.5vw;
+    padding-bottom: 3.5vw;
 }
 
 .feature_container h2{
@@ -351,7 +382,7 @@ h1{
 .image_scroll_section img{
     height: 26vw;
     width: 36vw;
-    padding-top: 3.3vw;
+    border-radius: 5px;
 }
 
 .image_scroll_article h4{
@@ -419,6 +450,10 @@ h1{
     padding-right: 1vw;
 }
 
+.city{
+    opacity: 50%;
+}
+
 .test_section h2{
     font-size: 2vw;
     margin-top: 3.5vw;
@@ -431,22 +466,12 @@ h1{
 
 .test_section span, .test_section a{
     padding-left: 1vw;
-    padding-bottom: 0.8vw;
+    padding-bottom: 0.4vw;
+    padding-top: 0.4vw
 }
 /* end Test speed section */
 
-#create_account{
-    margin: 0;
-    font-size: 1.2vw;
-    padding: 0.6vw 1vw;
-    background-color: #ffffff;
-    color: #1C79FF;
-}
-
-.city{
-    opacity: 50%;
-}
-
+/* Create account section */
 .last_gradient{
     text-align: center;
     padding: 4vw 0;
@@ -457,6 +482,57 @@ h1{
     padding-bottom: 1.5vw;
 
 }
+
+#create_account{
+    margin: 0;
+    font-size: 1.2vw;
+    padding: 0.6vw 1vw;
+    background-color: #ffffff;
+    color: #1C79FF;
+}
+/* Create account section */
+
+/* Footer */
+footer{
+    background-color: #031C4E;
+    font-size: 0.9vw;
+}
+
+.footer_container{
+    padding-top: 3vw;
+    padding-bottom: 5vw;
+}
+
+.icon{
+    font-size: 1vw;
+    padding: 0.2vw 0;
+}
+
+i{
+    cursor: pointer;
+}
+
+.footer_container img{
+    height: 2vw;
+}
+footer ul>li{
+    padding-bottom: 0.5vw;
+}
+
+footer h4{
+    padding: 0.5vw 0;
+}
+
+footer .col-2{
+    padding-left: 2vw;
+    padding-bottom: 2vw;
+}
+
+footer .opacity_50:hover{
+    color: #3286fa;
+}
+
+/* end Footer */
 
 
 
@@ -495,27 +571,27 @@ h1{
     .deploy{
         zoom: 120%;
     }
-
     .small_container{
         width: 95%;
+        margin: 0;
     }
-
     .col_3{
-        padding: 0VW;
+        padding: 0vw;
+        zoom: 130%;
     }
-
+    hr{
+        zoom: 25%;
+    }
     .hero h1, .hero p{
         zoom: 120%;
 
     }
-
     .customer ul li img{
         zoom: 155%;
     }
     .customer h3 h4{
         font-size: 1vw;
     }
-
     .deploy li{
         margin-left: 1vw;
     }
@@ -524,6 +600,10 @@ h1{
     }
     .feature_container .small_p{
         margin-bottom: 0vw;
+        zoom: 130%;
+    }
+    .test_section{
+        zoom: 150%;
     }
     .line::before{
         margin-left: 0;
@@ -534,6 +614,13 @@ h1{
     .first_block, .second_block{
         padding: 1vw 0;
     }
+    footer .col-2{
+        padding-left: 0vw;
+    }
+    footer{
+        zoom: 150%;
+    }
+
 
 
 
@@ -569,9 +656,20 @@ h1{
     .deploy{
         zoom: 130%;
     }
-
     .first_block, .second_block{
         padding: 1vw 0;
+    }
+    .test_section, .feature_container .small_p{
+        zoom: 130%;
+    }
+    footer ul{
+        height: 20vw;
+    }
+    footer .col-2{
+        padding-left: 0vw;
+    }
+    footer{
+        zoom: 130%;
     }
 
 
