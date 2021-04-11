@@ -22,6 +22,10 @@ a{
     text-align: right;
 }
 
+.txt_align_center{
+    text-align: center;
+}
+
 .drop::after{
     content: "";
     display: inline-block;
@@ -60,6 +64,10 @@ a{
 
 .txt_grey{
     color: #6F7B97;
+}
+
+.linear_gradient{
+    background-image: linear-gradient(to top, #001E9A,#0048C6);
 }
 
 /**************************** 
@@ -121,6 +129,9 @@ header{
     font-size: 1vw;
     display: flex;
     align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
 }
 
 /* Logo section */
@@ -150,10 +161,10 @@ header{
 
  /* Hero */
 h1{
-    font-size: 3.5vw;
+    font-size: 3vw;
     margin-top: 6%;
-    line-height: 5vw;
-    padding-right: 7vw;
+    line-height: 4vw;
+    padding-right: 10vw;
 }
 
 .hero [class*="col-"]{
@@ -175,10 +186,11 @@ h1{
 }
 
 .hero{
-    height: 34vw;
+    height: 30vw;
     background-image: url(../img/bg-banner-home.jpg);
     background-size: cover;
     background-position: 49% 0%;
+    margin-top: 4vw;
 }
 
 .hero_form, .hero_btn {
@@ -246,12 +258,12 @@ h1{
 }
 
 .small_p{
-    padding-right: 2vw;
+    padding-right: 3vw;
     height: 10vw;  
 }
 
 .deploy h2{
-    font-size: 2.3vw;
+    font-size: 2vw;
     padding: 1vw 0;
 }
 
@@ -279,7 +291,7 @@ h1{
 }
 
 .small_p h4, .small_p p, .image_scroll_article h4{
-    font-size: 0.8vw;
+    font-size: 0.9vw;
 }
 
 .line::before{
@@ -333,7 +345,7 @@ h1{
 }
 
 .feature_container h2{
-    font-size: 2.3vw;
+    font-size: 2vw;
 }
 
 .image_scroll_section img{
@@ -356,7 +368,7 @@ h1{
 }
 
 .feature_container .col_3{
-    padding: 2vw;
+    padding: 2vw 0;
 }
 
 .scroll_img::before{
@@ -389,6 +401,65 @@ h1{
 }
 /* end Image scroll section */
 
+/* Test speed section */
+.test_section{
+    padding-bottom: 3vw;
+}
+
+.first_block{
+    padding-right: 1vw;
+}
+.second_block{
+    padding-left: 1vw;
+}
+
+.test_speed{
+    color: #00D7D2;
+    text-align: right;
+    padding-right: 1vw;
+}
+
+.test_section h2{
+    font-size: 2vw;
+    margin-top: 3.5vw;
+    padding: 2vw 0;
+}
+
+.test_section .col-6{
+    font-size: 0.9vw;
+}
+
+.test_section span, .test_section a{
+    padding-left: 1vw;
+    padding-bottom: 0.8vw;
+}
+/* end Test speed section */
+
+#create_account{
+    margin: 0;
+    font-size: 1.2vw;
+    padding: 0.6vw 1vw;
+    background-color: #ffffff;
+    color: #1C79FF;
+}
+
+.city{
+    opacity: 50%;
+}
+
+.last_gradient{
+    text-align: center;
+    padding: 4vw 0;
+}
+
+.last_gradient h2{
+    font-size: 2vw;
+    padding-bottom: 1.5vw;
+
+}
+
+
+
 
 
  /**************************** 
@@ -412,14 +483,14 @@ h1{
         display: none;
     }
     .hero{
-        height: 74vw;
+        height: 71vw;
     }
     .form{
         height: 100%;
         margin: 0%;
         margin-top: 2%;
         font-size: 2vw;
-        zoom: 140%;
+        zoom: 150%;
     }
     .deploy{
         zoom: 120%;
@@ -433,14 +504,11 @@ h1{
         padding: 0VW;
     }
 
-    .hero h1{
-        padding-right: 12vw;
-        line-height: 5vw;
+    .hero h1, .hero p{
+        zoom: 120%;
+
     }
 
-    .hero p{
-        font-size: 2vw;
-    }
     .customer ul li img{
         zoom: 155%;
     }
@@ -463,13 +531,18 @@ h1{
     .scroll_img::before, .scroll_img::after{
         display: none;
     }
+    .first_block, .second_block{
+        padding: 1vw 0;
+    }
+
+
 
  }
 
 /* Medium Screen */
 @media screen and (min-width:768px) and (max-width:991px){
     body{
-        zoom: 125%;
+        zoom: 120%;
     }
     h1{
         margin-top: 15%;
@@ -483,7 +556,7 @@ h1{
         display: none;
     }
     .hero{
-        height: 41vw;
+        height: 39vw;
     }
     .hero_sx p{
         font-size: 1.7vw;
@@ -496,6 +569,11 @@ h1{
     .deploy{
         zoom: 130%;
     }
+
+    .first_block, .second_block{
+        padding: 1vw 0;
+    }
+
 
 }
 /* end Medium Screen */
