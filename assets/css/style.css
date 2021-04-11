@@ -150,9 +150,9 @@ header{
 
  /* Hero */
 h1{
-    font-size: 3.6vw;
+    font-size: 3.5vw;
     margin-top: 6%;
-    line-height: 4vw;
+    line-height: 5vw;
     padding-right: 7vw;
 }
 
@@ -175,9 +175,8 @@ h1{
 }
 
 .hero{
-    height: 30vw;
+    height: 34vw;
     background-image: url(../img/bg-banner-home.jpg);
-    background-repeat: 0;
     background-size: cover;
     background-position: 49% 0%;
 }
@@ -404,7 +403,7 @@ h1{
  /* Small Screen */
  @media screen and (max-width:767px){
     body{
-        zoom: 200%;
+       zoom: 160%;
     }
     .container{
         width: 95%;
@@ -413,7 +412,7 @@ h1{
         display: none;
     }
     .hero{
-        height: 72vw;
+        height: 74vw;
     }
     .form{
         height: 100%;
@@ -432,6 +431,11 @@ h1{
 
     .col_3{
         padding: 0VW;
+    }
+
+    .hero h1{
+        padding-right: 12vw;
+        line-height: 5vw;
     }
 
     .hero p{
@@ -479,7 +483,7 @@ h1{
         display: none;
     }
     .hero{
-        height: 39vw;
+        height: 41vw;
     }
     .hero_sx p{
         font-size: 1.7vw;
