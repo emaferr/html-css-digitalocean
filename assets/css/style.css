@@ -508,6 +508,10 @@ footer{
     padding: 0.2vw 0;
 }
 
+.footer_container p{
+    padding-bottom: 0.3vw;
+}
+
 i{
     cursor: pointer;
 }
