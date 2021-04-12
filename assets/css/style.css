@@ -490,9 +490,17 @@ h1{
     background-color: #ffffff;
     color: #1C79FF;
 }
-/* Create account section */
+/* end Create account section */
 
-/* Footer */
+ /**************************** 
+ * end Main
+ ***************************/
+
+
+/**************************** 
+ * Footer
+ ***************************/
+
 footer{
     background-color: #031C4E;
     font-size: 0.9vw;
@@ -536,14 +544,84 @@ footer .opacity_50:hover{
     color: #3286fa;
 }
 
-/* end Footer */
+/**************************** 
+ * end Footer
+ ***************************/
 
 
+/****************************
+ * Chat bot
+ ***************************/
+.chat_bot{
+    position: fixed;
+    bottom: 3vw;
+    right: 3vw;
+}
+ .chat_img{
+     height: 5.5vw;
+     width: 5.5vw;
+     background-color: #1C79FF;
+     background-image: url(../img/shark.png);
+     background-size: 6vw;
+     background-repeat: no-repeat;
+     background-position: center;
+     border-radius: 5px;
+     box-shadow: 0 0 0.2vw #333333;
+     cursor: pointer;  
+ }
+ 
+ .chat_number{
+    height: 2.5vw;
+    width: 2.5vw;
+    background-color: #ff0000;
+    color: #ffffff;
+    position: fixed;
+    right: 2.3vw;
+    bottom: 7.1vw;
+    box-shadow: 0 0 0.2vw #333333;
+    border: 0.35vw solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    font-size: 1vw;
+    align-items: center;
+ }
 
+ .chat_cartoon{
+    height: 6vw;
+    width: 26.5vw;
+    background-color: white;
+    position: fixed;
+    bottom: 3vw;
+    right: 11vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    line-height: 2vw;
+    box-shadow: 0 0 0.2vw #333333;
+    font-size: 1.1vw;
+ }
 
+ .indicator{
+    height: 1.2vw;
+    width: 1.2vw;
+    background-color: white;
+    transform: translate(rotate 45deg);
+    transform: rotate(45deg) skew(2deg, 2deg);
+    position: fixed;
+    bottom: 4vw;
+    right: 10.47vw;
+    border-radius: 1px;
+    box-shadow: 0.1vw -0.1vw 0vw #00000045;
+ }
 
- /**************************** 
- * end Main
+ .chat_img:hover{
+     opacity: 80%;
+ }
+
+/**************************** 
+ * end Chat bot
  ***************************/
 
 
@@ -624,10 +702,20 @@ footer .opacity_50:hover{
     footer{
         zoom: 150%;
     }
-
-
-
-
+    .chat_cartoon{
+        left: 2vw;
+    }
+    .indicator{
+        left: 27.85vw;
+    }
+    .chat_bot{
+        left: 2vw;
+        bottom: 10vw;
+    }
+    .chat_number{
+        left: 5.5vw;
+        bottom: 14vw;
+    }
  }
 
 /* Medium Screen */
@@ -675,8 +763,20 @@ footer .opacity_50:hover{
     footer{
         zoom: 130%;
     }
-
-
+    .chat_cartoon{
+        left: 2vw;
+    }
+    .indicator{
+        left: 27.85vw;
+    }
+    .chat_bot{
+        left: 2vw;
+        bottom: 10vw;
+    }
+    .chat_number{
+        left: 5.5vw;
+        bottom: 14vw;
+    }
 }
 /* end Medium Screen */
 
@@ -685,7 +785,6 @@ footer .opacity_50:hover{
     .icon_menu{
         visibility: hidden;
     }
-
 }
 /* Large Screen */
 
