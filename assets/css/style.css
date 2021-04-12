@@ -125,6 +125,14 @@ input{
     color: #626262;
 }
 
+.signin_btn{
+    background-color: #0570FF;
+    text-align: center;
+    margin: 0;
+    padding: 0.8vw;
+    font-size: 1.4vw;
+}
+
 .fa-circle:hover, .test_speed:hover, .btn:hover, .google_btn:hover{
     opacity: 50%;
     cursor: pointer;
@@ -227,7 +235,7 @@ h1{
 .hero p{
     font-size: 1.3vw;
     padding: 1.5vw 0;
-    opacity: 70%;
+    color: #BBCDFF;
     margin-right: 1.5vw;
 }
 
@@ -625,6 +633,75 @@ footer .opacity_50:hover{
  ***************************/
 
 
+ /**************************** 
+ * Drop burger menu
+ ****************************/
+
+ .drop_burger{
+    padding: 2.5vw 2.5vw;
+    background-color: #ffffff;
+    position: absolute;
+    left: -75vw;
+    border-bottom-left-radius: 5px;
+    box-shadow: 0vw 0vw 0.5vw #000000cb;
+    display: none;
+    top: 8vw;
+    width: 83vw;
+    height: 52vw;
+    z-index: 1;
+ }
+
+ .burger_link_container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 15vw;
+    line-height: 4vw;
+ }
+
+ .blc_2{
+     height: 10vw;
+ }
+
+ .drop_burger h5{
+     font-size: 1.5vw;
+
+ }
+
+ .burger_link_container a{
+     font-size: 1.4vw;
+ }
+
+ .burger_icon:hover .drop_burger {
+     display: block;
+ }
+
+ .burger_icon:hover .hero p {
+     display: none;
+ }
+
+ .icon_menu{
+    position: relative;
+    display: inline-block;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    padding-left: 4.92vw;
+ }
+
+ .drop_burger a:hover{
+     text-decoration: underline;
+     color: #0158c9;
+ }
+
+ .icon_menu:hover .drop_burger {
+     display: block;
+ }
+
+/**************************** 
+ * Drop burger menu
+ ***************************/
+
+
 /**************************** 
  * Media query  
  ***************************/
@@ -717,10 +794,14 @@ footer .opacity_50:hover{
         bottom: 14vw;
     }
     .fa-bars:before {
-        content: "\f0c9";
         font-size: 2vw;
     }
- }
+    .drop_burger{
+        left: -53.8vw;
+        width: 62vw;
+    }
+}
+
 
 /* Medium Screen */
 @media screen and (min-width:768px) and (max-width:991px){
@@ -784,6 +865,9 @@ footer .opacity_50:hover{
     .fa-bars:before {
         content: "\f0c9";
         font-size: 2vw;
+    }
+    .drop_burger{
+        left: -70vw;
     }
 }
 /* end Medium Screen */
