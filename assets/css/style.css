@@ -716,6 +716,10 @@ footer .opacity_50:hover{
         left: 5.5vw;
         bottom: 14vw;
     }
+    .fa-bars:before {
+        content: "\f0c9";
+        font-size: 2vw;
+    }
  }
 
 /* Medium Screen */
@@ -776,6 +780,10 @@ footer .opacity_50:hover{
     .chat_number{
         left: 5.5vw;
         bottom: 14vw;
+    }
+    .fa-bars:before {
+        content: "\f0c9";
+        font-size: 2vw;
     }
 }
 /* end Medium Screen */
