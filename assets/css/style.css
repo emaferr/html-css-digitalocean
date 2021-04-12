@@ -875,7 +875,7 @@ footer .opacity_50:hover{
 /* Large Screen */
 @media screen and (min-width:992px){
     .icon_menu{
-        visibility: hidden;
+        display: none;
     }
 }
 /* Large Screen */
