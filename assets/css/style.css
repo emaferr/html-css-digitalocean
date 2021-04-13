@@ -575,6 +575,7 @@ footer .opacity_50:hover{
     bottom: 3vw;
     right: 3vw;
 }
+
  .chat_img{
      height: 5.5vw;
      width: 5.5vw;
@@ -619,6 +620,7 @@ footer .opacity_50:hover{
     line-height: 2vw;
     box-shadow: 0 0 0.2vw #333333;
     font-size: 1.1vw;
+   
  }
 
  .indicator{
